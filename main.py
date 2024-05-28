@@ -5,7 +5,7 @@ if __name__ == '__main__':
     print(f'witaj {users[0]["name"]}')
 
     while True:
-        print('0. zakończ program ')
+        print('0. zakon7cz program ')
         print('1. wyświetl znajomych ')
         print('2. dodaj znajomego ')
         print('3. szukaj znajomego ')
