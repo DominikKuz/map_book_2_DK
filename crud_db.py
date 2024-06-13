@@ -48,7 +48,7 @@ def show_users(db_params) -> None:
         print(user)
 
 
-show_users(db_params)
+# show_users(db_params)
 
 
 # DELETE FROM public.users
