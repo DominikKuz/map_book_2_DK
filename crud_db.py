@@ -49,8 +49,18 @@ def show_users(db_params) -> None:
 
 
 # show_users(db_params)
-
-
+def get_users(db_params) -> list:
+    users_db=[]
+    sql_add_query = f"SELECT * FROM public.users  "
+    cursor = db_params.cursor()
+    cursor.execute(sql_add_query)
+    users = cursor.fetchall()
+    # print(users)
+    # db_params.commit()
+    for user in users:
+        users_db.append({'name': user[1], 'surname': user[2], 'post': user[3], 'location':user[4], 'coords':user[5]})
+    return users_db
+print (get_users(db_params))
 # DELETE FROM public.users
 # 	WHERE id=2
 

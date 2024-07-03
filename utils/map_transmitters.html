@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_55794cbeb7ab1c1cdead5d6382146cbe {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_55794cbeb7ab1c1cdead5d6382146cbe" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_55794cbeb7ab1c1cdead5d6382146cbe = L.map(
+                "map_55794cbeb7ab1c1cdead5d6382146cbe",
+                {
+                    center: [52.0, 20.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f483e6128c97fb8391441f4d09adb64e = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_f483e6128c97fb8391441f4d09adb64e.addTo(map_55794cbeb7ab1c1cdead5d6382146cbe);
+        
+    
+            var marker_1d5480935baf0b4415965772a922798a = L.marker(
+                [52.216111, 18.326111],
+                {}
+            ).addTo(map_55794cbeb7ab1c1cdead5d6382146cbe);
+        
+    
+            var icon_ecd0379e7e0e7af6025c3b0d266b3bf7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_1d5480935baf0b4415965772a922798a.setIcon(icon_ecd0379e7e0e7af6025c3b0d266b3bf7);
+        
+    
+        var popup_19b2a95fb6c6b6d6ccb90f5843e453d5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7ba5d3d133df3c76c78aa350ef63e473 = $(`<div id="html_7ba5d3d133df3c76c78aa350ef63e473" style="width: 100.0%; height: 100.0%;">Astra, Szczepidło</div>`)[0];
+                popup_19b2a95fb6c6b6d6ccb90f5843e453d5.setContent(html_7ba5d3d133df3c76c78aa350ef63e473);
+            
+        
+
+        marker_1d5480935baf0b4415965772a922798a.bindPopup(popup_19b2a95fb6c6b6d6ccb90f5843e453d5)
+        ;
+
+        
+    
+    
+            var marker_55be0f29f74919a3c5632b278426a0eb = L.marker(
+                [52.013333, 18.485278],
+                {}
+            ).addTo(map_55794cbeb7ab1c1cdead5d6382146cbe);
+        
+    
+            var icon_4f104f25b1200d3417649f64afb2c7cf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_55be0f29f74919a3c5632b278426a0eb.setIcon(icon_4f104f25b1200d3417649f64afb2c7cf);
+        
+    
+        var popup_b7c9ec595b1c2bf238a7683d6041d53d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_14fa0d7865b3b70d85822f05255b9858 = $(`<div id="html_14fa0d7865b3b70d85822f05255b9858" style="width: 100.0%; height: 100.0%;">Berria, Turek</div>`)[0];
+                popup_b7c9ec595b1c2bf238a7683d6041d53d.setContent(html_14fa0d7865b3b70d85822f05255b9858);
+            
+        
+
+        marker_55be0f29f74919a3c5632b278426a0eb.bindPopup(popup_b7c9ec595b1c2bf238a7683d6041d53d)
+        ;
+
+        
+    
+    
+            var marker_cfa1a9aaaaa2128b3fbc8c7bf281d653 = L.marker(
+                [52.232222, 21.008333],
+                {}
+            ).addTo(map_55794cbeb7ab1c1cdead5d6382146cbe);
+        
+    
+            var icon_8d0a89e8b72ee530ffdd0a42dd5d418a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_cfa1a9aaaaa2128b3fbc8c7bf281d653.setIcon(icon_8d0a89e8b72ee530ffdd0a42dd5d418a);
+        
+    
+        var popup_52ed9df586bcd2de8281b113d6395a39 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e629442b9afe4bfb64624f8a228c40aa = $(`<div id="html_e629442b9afe4bfb64624f8a228c40aa" style="width: 100.0%; height: 100.0%;">Karaka, Warszawa</div>`)[0];
+                popup_52ed9df586bcd2de8281b113d6395a39.setContent(html_e629442b9afe4bfb64624f8a228c40aa);
+            
+        
+
+        marker_cfa1a9aaaaa2128b3fbc8c7bf281d653.bindPopup(popup_52ed9df586bcd2de8281b113d6395a39)
+        ;
+
+        
+    
+    
+            var marker_ad9af2f064a6407d09fda9bf3ce6c959 = L.marker(
+                [52.227778, 20.241667],
+                {}
+            ).addTo(map_55794cbeb7ab1c1cdead5d6382146cbe);
+        
+    
+            var icon_ca32194c88d20af4a037e8c949ad10a3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_ad9af2f064a6407d09fda9bf3ce6c959.setIcon(icon_ca32194c88d20af4a037e8c949ad10a3);
+        
+    
+        var popup_902736230393e8902b4abc73b31dd34e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d262d551dfd40cb0fb6f64f2efb05769 = $(`<div id="html_d262d551dfd40cb0fb6f64f2efb05769" style="width: 100.0%; height: 100.0%;">Martyr, Sochaczew</div>`)[0];
+                popup_902736230393e8902b4abc73b31dd34e.setContent(html_d262d551dfd40cb0fb6f64f2efb05769);
+            
+        
+
+        marker_ad9af2f064a6407d09fda9bf3ce6c959.bindPopup(popup_902736230393e8902b4abc73b31dd34e)
+        ;
+
+        
+    
+    
+            var marker_a14bfbf8744361660888bdb4586b5e40 = L.marker(
+                [53.259722, 19.395556],
+                {}
+            ).addTo(map_55794cbeb7ab1c1cdead5d6382146cbe);
+        
+    
+            var icon_b49d3b302111078aa7e1e851b20b30f3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_a14bfbf8744361660888bdb4586b5e40.setIcon(icon_b49d3b302111078aa7e1e851b20b30f3);
+        
+    
+        var popup_c314a0179d996a489e4f0bc738a5fc14 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_85687835bfe530a61bd978beec5a3568 = $(`<div id="html_85687835bfe530a61bd978beec5a3568" style="width: 100.0%; height: 100.0%;">Rakan, Brodnica</div>`)[0];
+                popup_c314a0179d996a489e4f0bc738a5fc14.setContent(html_85687835bfe530a61bd978beec5a3568);
+            
+        
+
+        marker_a14bfbf8744361660888bdb4586b5e40.bindPopup(popup_c314a0179d996a489e4f0bc738a5fc14)
+        ;
+
+        
+    
+    
+            var marker_db369a0687ed50a36bfc787dfc4bf626 = L.marker(
+                [53.186667, 18.603611],
+                {}
+            ).addTo(map_55794cbeb7ab1c1cdead5d6382146cbe);
+        
+    
+            var icon_5d1cdd026bda7bdc553c37e60b71ecd3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_db369a0687ed50a36bfc787dfc4bf626.setIcon(icon_5d1cdd026bda7bdc553c37e60b71ecd3);
+        
+    
+        var popup_e13c87f706bd395b1f38280790659179 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_58208c8a72972f35ed55b86bcbe954e2 = $(`<div id="html_58208c8a72972f35ed55b86bcbe954e2" style="width: 100.0%; height: 100.0%;">Betta, Chełmża</div>`)[0];
+                popup_e13c87f706bd395b1f38280790659179.setContent(html_58208c8a72972f35ed55b86bcbe954e2);
+            
+        
+
+        marker_db369a0687ed50a36bfc787dfc4bf626.bindPopup(popup_e13c87f706bd395b1f38280790659179)
+        ;
+
+        
+    
+    
+            var marker_4724bfa2c06715e774bad5015f312885 = L.marker(
+                [53.022222, 18.611111],
+                {}
+            ).addTo(map_55794cbeb7ab1c1cdead5d6382146cbe);
+        
+    
+            var icon_99d0391c83a03dd1eaab16124335351f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_4724bfa2c06715e774bad5015f312885.setIcon(icon_99d0391c83a03dd1eaab16124335351f);
+        
+    
+        var popup_2d10876eac24cdcebbecdbe01198a6a7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7f683249a5c3902808da1b37b74fbc9a = $(`<div id="html_7f683249a5c3902808da1b37b74fbc9a" style="width: 100.0%; height: 100.0%;">Gilmas, Toruń</div>`)[0];
+                popup_2d10876eac24cdcebbecdbe01198a6a7.setContent(html_7f683249a5c3902808da1b37b74fbc9a);
+            
+        
+
+        marker_4724bfa2c06715e774bad5015f312885.bindPopup(popup_2d10876eac24cdcebbecdbe01198a6a7)
+        ;
+
+        
+    
+    
+            var marker_1ca84186a4a27c7f9f66df6f19f7e5d8 = L.marker(
+                [50.720556, 23.258611],
+                {}
+            ).addTo(map_55794cbeb7ab1c1cdead5d6382146cbe);
+        
+    
+            var icon_df17585769e0d1420a93f8639d90e1f1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_1ca84186a4a27c7f9f66df6f19f7e5d8.setIcon(icon_df17585769e0d1420a93f8639d90e1f1);
+        
+    
+        var popup_449c48c3a213df39ed093529ea4d3ead = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5019d5630b39751622ca364eb9901839 = $(`<div id="html_5019d5630b39751622ca364eb9901839" style="width: 100.0%; height: 100.0%;">Trento, Zamość</div>`)[0];
+                popup_449c48c3a213df39ed093529ea4d3ead.setContent(html_5019d5630b39751622ca364eb9901839);
+            
+        
+
+        marker_1ca84186a4a27c7f9f66df6f19f7e5d8.bindPopup(popup_449c48c3a213df39ed093529ea4d3ead)
+        ;
+
+        
+    
+    
+            var marker_d9a4879755a649ab2dbfe70f0c58c7e4 = L.marker(
+                [50.033611, 22.004722],
+                {}
+            ).addTo(map_55794cbeb7ab1c1cdead5d6382146cbe);
+        
+    
+            var icon_e1b6b47728be59b0269f2be4282a917a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_d9a4879755a649ab2dbfe70f0c58c7e4.setIcon(icon_e1b6b47728be59b0269f2be4282a917a);
+        
+    
+        var popup_979792e9a346ab1a6e800524b967c35a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e73d4c3501c39bb6591351efc6accc31 = $(`<div id="html_e73d4c3501c39bb6591351efc6accc31" style="width: 100.0%; height: 100.0%;">Camille, Rzeszów</div>`)[0];
+                popup_979792e9a346ab1a6e800524b967c35a.setContent(html_e73d4c3501c39bb6591351efc6accc31);
+            
+        
+
+        marker_d9a4879755a649ab2dbfe70f0c58c7e4.bindPopup(popup_979792e9a346ab1a6e800524b967c35a)
+        ;
+
+        
+    
+</script>
+</html>

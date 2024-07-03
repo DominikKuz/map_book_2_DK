@@ -1,12 +1,11 @@
 from tkinter import *
 
-user_list=[]
-class User:
-    def __init__(self, imie,nazwisko,posty,miejscowosc):
-        self.imie = imie
-        self.nazwisko = nazwisko
-        self.posty = posty
-        self.miejscowosc = miejscowosc
+radios_list=[]
+class Radio:
+    def __init__(self, nazwa, czestotliwosc,lokalizacja):
+        self.name = nazwa
+        self.frequency_band = czestotliwosc
+        self.location = lokalizacja
 
 
 
