@@ -1,11 +1,11 @@
 import folium
 import requests
 from bs4 import BeautifulSoup
-from models.data import radios, clients
+import models.data
 
 
 def show_radio(radio: list[dict[str, str]]) -> None:
-    for radio in radios:
+    for radio in models.data.radios:
         print(f"Nazwa: {radio['name']} , Czestotliwosc: {radio['frequency band']} , Lokalizacja: {radio['location']}")
 
 
@@ -20,20 +20,20 @@ def add_new_radio(radio: list[dict[str, str]]) -> None:
 
 def delete_radio(radio: list[dict[str, str]]) -> None:
     radio_name = input("jaką stację usunąć?: ")
-    for radio in radios:
+    for radio in models.data.radios:
         if f"{radio['name']}" == radio_name:
-            radios.remove(radio)
+            models.data.radios.remove(radio)
 
 
 def edit_radio(radio: list[dict[str, str]]) -> None:
     radio_name = input("jaką stację uaktualnić?: ")
-    for radio in radios:
+    for radio in models.data.radios:
         if f"{radio['name']}" == radio_name:
             radio["name"] = input("Nazwa stacji: ")
             radio["frequency band"] = input("częstotliwość: ")
             radio["location"] = input("lokalizacja: ")
-            print(radios)
-            radios.append(radio)
+            print(models.data.radios)
+            models.data.radios.append(radio)
 
 
 def show_transmitters(transmitters: list[dict]) -> None:

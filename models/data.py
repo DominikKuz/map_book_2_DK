@@ -1,4 +1,5 @@
 
+
 radios: list[dict[str, str]] = [
     {'name': 'Zetka', 'frequency band': 99.8, 'location':'Konin'},
     {'name': 'Jazda', 'frequency band': 98.7, 'location':'Poznań'},
@@ -8,15 +9,15 @@ radios: list[dict[str, str]] = [
 ]
 
 transmitters: list[dict] = [
-    {'name': 'Astra', 'location':'Szczepidło'},
-    {'name': 'Berria', 'location':'Turek'},
-    {'name': 'Karaka', 'location':'Warszawa'},
-    {'name': 'Martyr', 'location':'Sochaczew'},
-    {'name': 'Rakan', 'location':'Brodnica'},
-    {'name': 'Betta', 'location':'Chełmża'},
-    {'name': 'Gilmas', 'location':'Toruń'},
-    {'name': 'Trento', 'location':'Zamość'},
-    {'name': 'Camille', 'location':'Rzeszów'},
+    {'name': 'Astra', 'location': 'Szczepidło'},
+    {'name': 'Berria', 'location': 'Turek'},
+    {'name': 'Karaka', 'location': 'Warszawa'},
+    {'name': 'Martyr', 'location': 'Sochaczew'},
+    {'name': 'Rakan', 'location': 'Brodnica'},
+    {'name': 'Betta', 'location': 'Chełmża'},
+    {'name': 'Gilmas', 'location': 'Toruń'},
+    {'name': 'Trento', 'location': 'Zamość'},
+    {'name': 'Camille', 'location': 'Rzeszów'},
 
 
 ]
